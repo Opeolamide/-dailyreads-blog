@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px 8%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f766e;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #374151;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #0f766e;
+}
+
+.nav-btn,
+.primary-btn,
+.newsletter button {
+  background: #0f766e;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.nav-btn:hover,
+.primary-btn:hover,
+.newsletter button:hover {
+  background: #115e59;
+}
+
+.hero {
+  min-height: 70vh;
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  background: #eafaf7;
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.hero-content span,
+.featured-content span,
+.blog-info span {
+  display: inline-block;
+  color: #0f766e;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.featured-section,
+.blog-section,
+.categories-section {
+  padding: 70px 8%;
+}
+
+.featured-section,
+.categories-section {
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2,
+.newsletter h2 {
+  font-size: 34px;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.section-title p,
+.newsletter p {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.featured-card {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  background: #f8fafc;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.featured-card img {
+  width: 50%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.featured-content {
+  padding: 30px;
+}
+
+.featured-content h3 {
+  font-size: 30px;
+  color: #111827;
+  margin-bottom: 14px;
+}
+
+.featured-content p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.featured-content a,
+.blog-info a {
+  color: #0f766e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.blog-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-info {
+  padding: 22px;
+}
+
+.blog-info h3 {
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.blog-info p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.category-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  padding: 22px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.newsletter {
+  margin: 30px 8% 70px;
+  padding: 55px 25px;
+  text-align: center;
+  background: #eafaf7;
+  border-radius: 8px;
+}
+
+.newsletter p {
+  margin-bottom: 25px;
+}
+
+.newsletter form {
+  max-width: 520px;
+  margin: auto;
+  display: flex;
+  gap: 12px;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.newsletter input:focus {
+  border-color: #0f766e;
+}
+
+footer {
+  background: #111827;
+  color: #ffffff;
+  text-align: center;
+  padding: 22px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .hero {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .featured-card {
+    flex-direction: column;
+  }
+
+  .featured-card img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .blog-grid,
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .section-title h2,
+  .newsletter h2 {
+    font-size: 28px;
+  }
+}
